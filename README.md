@@ -8,7 +8,7 @@ A lightweight, efficient chat API server built with **FastAPI** and powered by t
 
 The current-generation Mac Mini is an incredibly efficient desktop. They have very low idle power draw, and are excellent and responsive for most interactive tasks. Even with standard compute duties within one of our clinics there are plenty of cycles to spare for background work like LLM completion requests.
 
-A Mac Mini M4 Pro with >=32GB of memory can run pretty high quality models like Mistral Small (2501 @ 4bit) at roughly 18 tokens / second with a power draw of ~60 watts measured at the wall. This is an incredibly efficient and compelling solution to many of the LLM completion needs for our internal AI products where these kinds of token generation speeds are sufficient.
+A Mac Mini M4 Pro with >=32GB of memory can run pretty high quality models like Mistral Small (2501 @ 4bit) at roughly 18 tokens / second with a power draw of ~60 watts measured at the wall. This is an incredibly efficient and compelling solution to many of the LLM completion needs in our internal AI products.
 
 Do not expose this service to the internet or untrusted networks. Any sensitive information and certainly any PHI must only be transmitted over an encrypted connection, and not stored in any logs. Please ensure you understand the security and privacy requirements of anything you deploy.
 
