@@ -2,7 +2,7 @@
 
 A lightweight, efficient chat API server built with **FastAPI** and powered by the high-performance [mlx-community](https://github.com/ml-explore/mlx-examples) language models. This project allows you to quickly spin up an HTTP interface for chat-based completion tasks with MLX models on Apple silicon systems. 
 
---
+---
 
 ## Background 
 
