@@ -10,7 +10,7 @@ The current-generation Mac Mini is an incredibly efficient desktop. They have ve
 
 A Mac Mini M4 Pro with >=32GB of memory can run pretty high quality models like Mistral Small (2501 @ 4bit) at roughly 18 tokens / second with a model power draw of ~60 watts measured at the wall. This is an incredibly efficient and compelling solution to many of the LLM completion needs for our internal AI products where these kinds of token generation speeds are sufficient.
 
-Do not expose this service to the internet or untrusted networks. Any sensitive information and certainly any PHI must only be transmitted over an encrypted connection, and not stored in any logs. 
+Do not expose this service to the internet or untrusted networks. Any sensitive information and certainly any PHI must only be transmitted over an encrypted connection, and not stored in any logs. Please ensure you understand the security and privacy requirements of anything you deploy.
 
 ---
 
@@ -21,8 +21,8 @@ Do not expose this service to the internet or untrusted networks. Any sensitive 
 Clone this repository and navigate to the project directory:
 
 ```bash
-git clone <your-repository-url>
-cd <your-project-directory>
+git clone https://github.com/The-Origin-Way/serveMLX
+cd serveMLX
 ```
 
 Create a virtual environment and activate it (recommended):
@@ -65,7 +65,8 @@ python app.py --model mlx-community/Mistral-Small-24B-Instruct-2501-4bit --host 
 | `--model`          | `mlx-community/Mistral-Small-24B-Instruct-2501-4bit`| MLX model name or path                    |
 | `--host`           | `0.0.0.0`                                           | IP address or hostname to bind the server |
 | `--port`           | `8000`                                              | Port for the server                       |
-| `--logfile`        | stdout                                              | JSONL logfile (optional)                  |
+| `--logfile`        | logging disabled                                    | JSONL logfile (optional)                  |
+| `--log-stdout`     | logging disabled                                    | Console logging (optional)                |
 
 ---
 

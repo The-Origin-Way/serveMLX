@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.servemlx.api</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        /path/to/your/install/venv/bin/python
+        /path/to/your/install/app.py
+        --host
+        127.0.0.1
+        --port
+        8000
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/path/to/your/install</string>
+
+    <key>StandardOutPath</key>
+    <string>/path/to/your/install/logs/servemlx.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/path/to/your/install/logs/servemlx.err.log</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
